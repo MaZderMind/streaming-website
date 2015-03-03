@@ -61,6 +61,16 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
 	//'BANNER_HTML' => '31C3 – a new dawn',
+
+
+	/**
+	 * CLOSED kann nach einer Konferenz auf true gesetzt werden. Dadurch wird für normale Besucher
+	 * die komplette Streaming-Seite deaktiviert und durch ein "Die Konferenz ist beendet, die
+	 * nächste Konferenz die das V3Voc überträgt XXX am YYY sein". Dazu wird ein Countdown zum
+	 * nächsten Veranstaltungsdatum angezeigt. Die nächste Veranstaltung wird aus dem Eventkalender
+	 * <http://c3voc.de/eventkalender/events.json?filter=upcoming&streaming=true> entnommen.
+	 */
+	'CLOSED' => true,
 );
 
 /**
